@@ -47,14 +47,6 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
-            "Microsoft.Azure.Storage.Blob": {
-              "target": "Package",
-              "version": "[11.2.3, )"
-            },
-            "Microsoft.Azure.Storage.Common": {
-              "target": "Package",
-              "version": "[11.2.3, )"
-            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0-preview5.24024.3, )"
