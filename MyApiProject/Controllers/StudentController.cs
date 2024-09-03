@@ -61,7 +61,7 @@ namespace MyApiProject.Controllers
         [HttpGet("{StudentId}")]
         [ProducesResponseType(typeof(IEnumerable<StudentModel>), 200)]
         [ProducesResponseType(404)]
-        public IActionResult GetContactsByUserId(int StudentId)
+        public IActionResult GetStudentById(int StudentId)
         {
             List<StudentModel> students = new List<StudentModel>();
 
@@ -112,52 +112,3 @@ namespace MyApiProject.Controllers
 
     }
 }
-
-    // internal class UserModel
-    // {
-    // }
-
-
-        // [HttpGet]
-        // [ProducesResponseType(typeof(IEnumerable<UserModel>), 200)]
-
-        // public List<UserContactModel> GetContacts()
-
-        // {
-        //     List<UserContactModel> contactdetails = new List<UserContactModel>();
-
-        //     using (SqlConnection connection = new SqlConnection(_connectionString))
-        //     {
-        //         string query = "SELECT ContactID, UserID, Email, PhoneNumber FROM ContactDetails";
-
-        //         SqlCommand command = new SqlCommand(query, connection);
-
-        //         try
-        //         {
-        //             connection.Open();
-        //             SqlDataReader reader = command.ExecuteReader();
-
-        //             while (reader.Read())
-        //             {
-        //                 UserContactModel contacts = new UserContactModel
-        //                 {
-        //                     ContactID = reader.GetInt32(0),
-        //                     UserID = reader.GetInt32(1),
-        //                     Email = reader.GetString(2),
-        //                     PhoneNumber = reader.GetString(3)
-        //                 };
-
-        //                 contactdetails.Add(contacts);
-        //             }
-
-        //             reader.Close();
-        //         }
-        //         catch (Exception ex)
-        //         {
-        //             Console.WriteLine(ex.Message);
-                    
-        //         }
-        //     }
-
-        //     return contactdetails;
-        // }
