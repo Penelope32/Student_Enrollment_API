@@ -6,14 +6,14 @@ import Students from './pages/Students';
 import Departments from './pages/Departments';
 import Lectures from './pages/Lectures';
 import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <div>
       <div>
         <Navbar />
-        <Sidebar />
+        <Dashboard />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/students" element={<Students />} />
