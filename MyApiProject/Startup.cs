@@ -16,17 +16,17 @@ namespace MyApiProject
 
         public IConfiguration Configuration { get; }
 
-        // Method gets called by Runtime -> Used to add services to the container.
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddNewtonsoftJson();
 
-            // Register Swagger generator
+            
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bursary Database API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Student Enrollment API", Version = "v1" });
 
-                // Generate xml docs to drive swagger docs
+                
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 
@@ -37,13 +37,14 @@ namespace MyApiProject
                 });
             }).AddSwaggerGenNewtonsoftSupport();
             
-            // // Registering Different Controllers with Dependency Injection (DI)
+            
             services.AddScoped<StudentController>();
+            services.AddScoped<CourseController>();
             
            
         }
 
-        // Configure the HTTP request pipeline.
+        
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -55,14 +56,12 @@ namespace MyApiProject
                 app.UseExceptionHandler("/error");
             }
 
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
+ 
             app.UseSwagger();
 
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-            // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Bursary Database API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Student Enrollment API V1");
                 c.DisplayOperationId();
             });
 

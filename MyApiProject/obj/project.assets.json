@@ -2490,19 +2490,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\penel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Student_Enrollment_API\\MyApiProject\\MyApiProject.csproj",
+      "projectUniqueName": "C:\\Users\\penel\\Documents\\Student_Enrollment_System\\MyApiProject\\MyApiProject.csproj",
       "projectName": "MyApiProject",
-      "projectPath": "C:\\Users\\Administrator\\Documents\\Student_Enrollment_API\\MyApiProject\\MyApiProject.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Documents\\Student_Enrollment_API\\MyApiProject\\obj\\",
+      "projectPath": "C:\\Users\\penel\\Documents\\Student_Enrollment_System\\MyApiProject\\MyApiProject.csproj",
+      "packagesPath": "C:\\Users\\penel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\penel\\Documents\\Student_Enrollment_System\\MyApiProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\penel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
