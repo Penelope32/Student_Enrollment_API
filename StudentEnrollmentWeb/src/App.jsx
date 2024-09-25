@@ -6,7 +6,8 @@ import StudentForm from './components/students/StudentForm';
 import CourseList from './components/courses/CourseList';
 import Home from './components/Home';
 import Sidebar from './components/students/Sidebar';
-import ProfileCard from './components/students/ProfileCard';
+import Dashboard from './components/students/Dashboard';
+
 
 import './App.css'
 
@@ -23,8 +24,7 @@ function App() {
         </nav> */}
 
         <Sidebar />
-        <ProfileCard />
-
+        <Dashboard />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/students" element={<StudentList />} />
