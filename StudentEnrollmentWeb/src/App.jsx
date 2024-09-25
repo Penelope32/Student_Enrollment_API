@@ -5,6 +5,8 @@ import StudentList from './components/students/StudentList';
 import StudentForm from './components/students/StudentForm';
 import CourseList from './components/courses/CourseList';
 import Home from './components/Home';
+import Sidebar from './components/students/Sidebar';
+import ProfileCard from './components/students/ProfileCard';
 
 import './App.css'
 
@@ -14,11 +16,14 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <nav>
           <Link to="/students">Student List</Link>
           <Link to="/add-student">Add Student</Link>
           <Link to="/courses">Course List</Link>
-        </nav>
+        </nav> */}
+
+        <Sidebar />
+        <ProfileCard />
 
         <Routes>
           <Route path="/" element={<Home />} />

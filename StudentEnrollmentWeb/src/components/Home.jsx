@@ -7,13 +7,15 @@ const Home = () => {
     <div>
       <h1>Dashboard</h1>
       <p>Welcome to the Student Enrollment System.</p>
-      <nav>
+      {/* <nav>
         <Link to="/students">View Students</Link>
         <br />
         <Link to="/add-student">Add Student</Link>
         <br />
         <Link to="/courses">View Courses</Link>
-      </nav>
+      </nav> */}
+
+
     </div>
   );
 };
