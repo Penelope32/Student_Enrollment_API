@@ -2,6 +2,10 @@ import React from 'react';
 import ProfileCard from './ProfileCard';
 
 
+import '../Styles/Student.css'
+
+
+
 const Dashboard = () => {
   return (
     <div className="dashboard">

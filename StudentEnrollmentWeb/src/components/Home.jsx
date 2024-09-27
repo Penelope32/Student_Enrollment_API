@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div>
-      <h1>Dashboard</h1>
-      <p>Welcome to the Student Enrollment System.</p>
+
       {/* <nav>
         <Link to="/students">View Students</Link>
         <br />
