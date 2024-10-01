@@ -5,7 +5,7 @@ const StudentList = () => {
 
   useEffect(() => {
     
-    fetch('/api/students') 
+    fetch('http://localhost:5022/api/Student') 
       .then(response => response.json())
       .then(data => setStudents(data))
       .catch(error => console.error('Error fetching students:', error));

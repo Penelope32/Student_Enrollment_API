@@ -20,7 +20,7 @@ const StudentForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // POST request to register a new student
-    fetch('/api/students', {
+    fetch('http://localhost:5022/api/Student', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(studentData),
